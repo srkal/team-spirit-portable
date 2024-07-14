@@ -5,12 +5,13 @@ This device is a gift for leaving member of our team
 * compact, portable, battery operated mp3 player with mono speaker
 * has power switch and rotary encoder with push button
 * plays random welcom message when powered on
-* plays random work message when the button is pushed
+* plays random work message when the button is pushed (without repeat until all available messages are played)
 * volume can be changed by rotation of encoder
+* long button press plays usage instructions
 
 ## MP3s organization and usage
 * stored on Micro SD card (max 32GB) formatted FAT32 in MP3 directory
-* naming convention - 0001.mp3 to xxxx.mp3, numbered continuously without holes
+* naming convention - 0001.mp3 to xxxx.mp3, numbered continuously, 1000.mp3 is manual and 1001.mp3 is maximum volume warning
 * mp3 can be 44100Hz, mono, any lenght, typicaly short, without leading and trailing delay without sound
 * first 1 to N are welcome messages, N+1 to the last are work messages
 * used serial command interface (init, play selected file, change volume)
